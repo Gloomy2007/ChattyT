@@ -1,0 +1,26 @@
+h1, h2 {
+    color: rgb(138, 183, 72);
+}
+
+p {
+    padding: 0px;
+    margin: 15px 0; /* Cleans up the spacing around text */
+    /* Red border removed so your lines look clean */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Keeps columns lined up nicely at the top */
+    gap: 30px; /* Gives breathing room between the two columns */
+}
+
+/* This single class now handles the layout for both columns */
+.box {
+    flex: 1;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgb(223, 178, 178); /* Optional: Gives a very subtle, clean background tint to the columns */
+    border-radius: 6px;
+    border: 1px solid rgb(22, 17, 17); /* Matches the background for a clean look */
+}
