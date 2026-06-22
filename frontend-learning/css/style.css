@@ -1,26 +1,61 @@
 h1, h2 {
-    color: rgb(138, 183, 72);
+    color: rgb(8, 10, 5);
 }
 
 p {
     padding: 0px;
-    margin: 15px 0; /* Cleans up the spacing around text */
-    /* Red border removed so your lines look clean */
+    margin: 15px 0;
+}
+
+header {
+    width: 100%;
+    border-bottom: 2px solid #706464; 
+    padding-bottom: 15px; 
+    margin-bottom: 30px; 
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+} 
+
+nav a {
+    text-decoration: none;
+    color: #e6adad; 
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e6adad; 
+    color: rgb(22, 17, 17);    
+    border: 2px solid rgb(22, 17, 17);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+button:hover {
+    background-color: rgb(22, 17, 17); 
+    color: #e6adad;                    
 }
 
 .container {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Keeps columns lined up nicely at the top */
-    gap: 30px; /* Gives breathing room between the two columns */
+    align-items: flex-start; 
+    gap: 30px; 
 }
 
-/* This single class now handles the layout for both columns */
+
 .box {
+    align-self: stretch;
     flex: 1;
     margin: 10px;
     padding: 15px;
-    background-color: rgb(223, 178, 178); /* Optional: Gives a very subtle, clean background tint to the columns */
+    background-color: #e6adad; 
     border-radius: 6px;
-    border: 1px solid rgb(22, 17, 17); /* Matches the background for a clean look */
+    border: 2px solid rgb(22, 17, 17); 
 }
